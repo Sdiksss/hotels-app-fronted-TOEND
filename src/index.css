@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-color: #ecf0f1;
+  --primary-color: #2B2A4C;
+  --secondary-color: #a33807;
+  --accent-color: #ff002b;
+  --text-color-black: #EA906C;
+  --text-color-light: #f1f1f1;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }

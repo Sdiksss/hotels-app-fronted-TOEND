@@ -1,3 +1,15 @@
 label { 
   display: block;
 }
+
+html, body {
+  width: 100%;
+  background-color: var(background-color);
+}
+
+.body-div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw
+}

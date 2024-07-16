@@ -1,48 +1,57 @@
 .header__shared {
-    background-color: rgb(255, 244, 223);
+    background-color: rgb(29, 2, 63);
     z-index: 2;
     padding: 0.5em 1em 0.1em;
 }
 
+.hs_nav1 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 10vw;
+
+}
+
+.hs_div {
+    text-decoration: none;
+}
+
+.hs_div_a {
+    padding-right: 2em;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
 
 .header__shared-h1 {
-    font-family: cursive;
-    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
     font-weight: 1000;
+    text-decoration: none;
 }
-.header__shared-ul {
+
+
+.hs-ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em 10vw;
 }
 
-.header__shared-li-left {
-    margin-right: auto;
-    background-color: red;
-    border-radius: 0.5em;
-    padding: 0.2em 0.4em;
+.hs-ul-li {
+    padding-right: 2em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
 }
 
-.header__shared-li-left-text {
-    color: white;
-    font-size: 1em;
-    font-weight: 600;
-}
 
-.header__shared-li-right {
-    display: flex;
-    margin-left: auto;
-    gap: 2em;
-    border-radius: 1em;
-}
-
-.header__shared-li-r-text{
-    margin-right: auto;
-    background-color: red;
-    border-radius: 0.5em;
-    padding: 0.2em 0.4em;
-    color: white;
-    font-size: 1em;
-    font-weight: 600;
+@media (max-width: 768px) {
+    .header__shared,
+    .hs_nav1,
+    .hs-ul {
+        padding: 0.5em 0.5em 0.1em; /* Reducir padding a 0.5em en ambos lados */
+    }
 }

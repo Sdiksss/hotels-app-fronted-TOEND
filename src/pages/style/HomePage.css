@@ -1,15 +1,43 @@
 .HomePage__container {
     display: flex;
+    min-width: 100vw;
+    padding: 0 10vw;
+
 }
 
 .HomePage__div-search {
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
-    background-color: rgb(255, 255, 255);
-    padding: 2em 3em;
+    background-color: var(--secondary-color);
+    padding: 1em 1.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    height: auto;
+    color: var(--text-color-light);
 }
 
 .HomePage__div-search > * {
     margin-bottom: 0.2em;
+}
+
+.filterName__form > input {
+    border-radius: 0.5em 0.5em 0 0 ;
+}
+.filterName__form > button {
+    border-radius: 0 0 0.5em 0.5em ;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    color: var(--text-color-light);
+}
+
+.filterPrice__div-label > input {
+    border-radius: 0.5em;
+
+}
+
+@media (max-width: 768px) {
+    .HomePage__container {
+        padding: 0.5em 0.5em 0.1em; /* Reducir padding a 0.5em en ambos lados */
+    }
 }

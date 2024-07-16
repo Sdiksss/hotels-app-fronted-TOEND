@@ -10,13 +10,14 @@ import HeaderShared from './Components/shared/HeaderShared'
 import Reservation from './Components/HotelInfoPage/Reservation'
 import ReservationsPage from './pages/ReservationsPage'
 import ProtectedRoutes from './pages/style/ProtectedRoutes'
+import FooterShared from './Components/shared/FooterShared'
 
 function App() {
 
   return (
     <>
 
-    <div>
+    <div className='body-div'>
     <HeaderShared/>
 
     <Routes>
@@ -33,6 +34,7 @@ function App() {
       <Route path='*' element={<UnknownPages/>} />
     </Routes>
 
+    <FooterShared/>
     </div>
     
     </>

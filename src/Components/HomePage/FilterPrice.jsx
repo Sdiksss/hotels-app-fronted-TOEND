@@ -15,16 +15,14 @@ const FilterPrice = ({setFromTo}) => {
 
     }
   return (
-    <div>
+    <div className='filterPrice__div'>
       <h3> Filter price </h3>
       <form onSubmit={handleSubmit(submit)} >
-        <label>
-          <span>From</span>
-          <input {...register("from")}  type="number" />
+        <label className='filterPrice__div-label'>
+          <input {...register("from")}  type="number" placeholder='Min price'/>
         </label>
-        <label>
-          <span>To</span>
-          <input {...register("to")} type="number" />
+        <label className='filterPrice__div-label'>
+          <input {...register("to")} type="number" placeholder='Max price' />
         </label>
         <button className='filterPrice__btn'>Apply</button>
       </form>

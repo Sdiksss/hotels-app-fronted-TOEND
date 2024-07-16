@@ -7,7 +7,7 @@ const ListHotels = ({hotels}) => {
     <div className='card-container'>
        {
           !hotels || hotels?.length === 0 
-          ? (<h2>No existe hoteles</h2>)
+          ? (<h2 className='h2__error'>No existe hoteles</h2>)
           : (
             hotels?.map(hotel => (
             <HotelCard

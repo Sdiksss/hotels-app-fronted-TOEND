@@ -24,6 +24,7 @@ const LoginPage = () => {
 
   if(localStorage.getItem("token")){
     const {firstName, lastName, email} = JSON.parse(localStorage.getItem("user"))
+
     return (
       <div className='login__div'>
         <img src='' alt='' />
